@@ -1,0 +1,86 @@
+.container {
+  padding: 40px;
+  width: 100dvw;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.header {
+  height: 8dvh;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.title {
+  flex: 1;
+  text-align: center;
+}
+
+.calendar {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  /*grid-template-rows: repeat(7, 1fr); /* 1 linha cabeçalho + 6 semanas */
+  width: 100%;
+  height: 92dvh; /* ocupa o resto da tela */
+  box-sizing: border-box;
+}
+
+.cell {
+  border: 1px solid #ddd;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 0.8rem;
+  text-align: right;
+  min-height: 180px;
+}
+
+.dayHeader {
+  background-color: #eee;
+  font-weight: bold;
+  text-align: center;
+  min-height: 40px;
+  max-height: 40px;
+  box-sizing: border-box;
+  font-size: 0.8rem;
+  border: 1px solid #ddd;
+  padding: 5px
+}
+
+.plusButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+.plusButton {
+  width: 20px;
+  cursor: pointer;
+  border: 2px solid #1931e3;
+  border-radius: 5px;
+  padding: 2px;
+  color: #1931e3
+}
+
+.plusButton:hover {
+  transition: 0.5s;
+  background-color: #1931e3;
+  color: white
+}
