@@ -1,7 +1,7 @@
 import './Modal.css';
 import Icon from '../Icon/Icon';
 
-const Modal = ({ title, visible, setVisible }) => {
+const Modal = ({ title, visible, setVisible, content }) => {
   return (
     <>
       {visible && (
@@ -16,6 +16,8 @@ const Modal = ({ title, visible, setVisible }) => {
                 onClick={() => setVisible(!visible)}
               />
             </div>
+            <div className='modalContent'>{content}</div>
+            
           </div>
         </div>
       )}

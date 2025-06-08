@@ -1,11 +1,33 @@
-.container {
+.calendarContainer {
   padding: 40px;
-  width: 100dvw;
+  /*width: 100dvw;*/
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   overflow: hidden;
   font-family: sans-serif;
+}
+
+.calendarHeader {
+  /*background-color: #008982;*/
+  border-bottom: 2px solid #008982;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 0 10px;
+}
+
+.calendarHeader img {
+  width: 80px;
+}
+
+.logout {
+  display: flex;
+}
+
+.logout label {
+  font-weight: bold;
+  margin-right: 10px;
 }
 
 .header {
@@ -68,6 +90,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0px;
+  font-weight: bold;
 }
 
 .plusButton {
@@ -83,4 +106,44 @@
   transition: 0.5s;
   background-color: #1931e3;
   color: white
+}
+
+.activitiesContainer {
+  margin-top: 10px;
+  max-height: 138px;
+  overflow-y: auto;
+}
+
+.activitiesContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.activity {
+  cursor: pointer;
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  max-width: 120px;
+  background-color: #008982;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activity > div:first-child {
+  flex-shrink: 0;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.activity > div:last-child {
+  flex-grow: 1;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
