@@ -1,7 +1,7 @@
 import { CIcon } from '@coreui/icons-react';
 import { icons } from './AllIcons';
 
-const Icon = ({ name, iconSize, cursor, onClick }) => {
+const Icon = ({ name, iconSize, cursor, onClick, color }) => {
   return (
     <>
       <CIcon
@@ -11,6 +11,7 @@ const Icon = ({ name, iconSize, cursor, onClick }) => {
           display: 'block',
           width: iconSize,
           cursor: cursor,
+          color: color
         }}
       />
     </>

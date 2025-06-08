@@ -4,24 +4,30 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6); /* fundo escuro semi-transparente */
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 999; /* garantir que fique por cima de tudo */
+  z-index: 999;
 }
 
 .modalContainer {
-  width: 500px;
-  height: 500px;
+  width: 700px;
   border-radius: 10px;
-  background-color: white;
+  background-color: #f7f7f7;
   z-index: 1000;
 }
 
 .modalHeader {
   display: flex;
-  padding: 5px;
+  padding: 10px;
   justify-content: space-between;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   border-bottom: 1px solid #d8d8d8;
+  background-color: #a7cae6;
+}
+
+.modalContent {
+  padding: 10px;
 }

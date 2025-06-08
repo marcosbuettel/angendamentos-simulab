@@ -1,0 +1,117 @@
+.loginBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.loginBackground::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/faminas.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.loginContainer{
+  display: flex;
+  width: 400px;
+  /*height: 60%;*/
+  padding: 20px 0;
+  border-radius: 10px;
+  /*background-color: #f7f7f7;*/
+  background-color: white;
+  z-index: 1000;
+  box-shadow: -4px -4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.loginLeftSide {
+  position: relative;
+  width: 40%;
+  color: white;
+  padding: 10px;
+  background-image: linear-gradient(to bottom right, #006a64, #008982, #4dc0b8);
+  /*background-image: linear-gradient(to bottom right, #0f0e33, #191851, #5e5ca0);*/
+  background-image: linear-gradient(to bottom right, #3b2e6f, #6d3f91, #ff4da6);
+  background-image: linear-gradient(to bottom right, #2e3b6f, #5a3c91, #b44da6);
+  /*background-image: linear-gradient(to bottom right, #3a3f5e, #5e4b76, #c87fa8);*/
+}
+
+.loginLeftSide h2 {
+  font-size: 16px;
+}
+
+
+.loginCenteredContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.loginCenteredContent h3 {
+  position: relative;
+  display: inline-block; /* mantém o pseudo-elemento vinculado ao texto */
+  margin-bottom: 10px;
+}
+
+.loginCenteredContent h3::after {
+  content: '';
+  display: block;
+  width: 40%; /* ou um valor fixo como 30px */
+  height: 4px;
+  background-color: white; /* ou outra cor desejada */
+  margin-top: 12px;
+  border-radius: 2px;
+}
+
+.loginRightSide {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* para que os inputs fiquem em coluna */
+  justify-content: center; /* centraliza verticalmente */
+  align-items: center;     /* centraliza horizontalmente */
+  height: 100%; /* precisa ter altura para centralizar verticalmente */
+  padding: 20px;
+}
+
+.btn-primary.custom-color {
+  background-color: #191851; /* sua cor */
+  border-color: #191851;
+}
+
+.btn-primary.custom-color:hover,
+.btn-primary.custom-color:focus {
+  background-color: #0f0e33; /* cor escura para hover/focus */
+  border-color: #0f0e33;
+}
+
+.loginFooter {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoFaminas img,
+.logoSimulab img {
+  max-width: 70%;
+}
+
+.logoSimulab {
+  text-align: right; /* empurra o conteúdo (a imagem) para o lado direito */
+}

@@ -1,6 +1,7 @@
 import {
   cilX,
   cilPlus,
+  cilAccountLogout,
   cilList,
   cilArrowLeft,
   cilArrowRight,
@@ -43,6 +44,7 @@ import {
 export const icons = {
   cilX,
   cilPlus,
+  cilAccountLogout,
   cilList,
   cilArrowLeft,
   cilArrowRight,
